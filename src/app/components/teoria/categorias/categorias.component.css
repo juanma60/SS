@@ -1,0 +1,14 @@
+.nav-item {
+    border-radius: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.nav-item .active {
+    background-image: url(src/assets/imagenes/fondos/madera.jpg);
+}
+
+a {
+    color: white;
+    font-size: 1.2rem;
+}

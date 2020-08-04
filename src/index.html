@@ -1,13 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>SKATE</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="shortcut icon" href="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/favicon.ico" />
+  <link rel="stylesheet" id="compiled.css-css"
+    href="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/css/compiled-4.19.0.min.css?ver=4.19.0"
+    type="text/css" media="all" />
 </head>
-<body>
+
+<body class="fondoLija">
   <app-root></app-root>
+  <div>
+    <!--script type="text/javascript"
+      src="https://mdbootstrap.com/wp-admin/load-scripts.php?c=gzip&amp;load%5Bchunk_0%5D=hoverintent-js,admin-bar,wp-embed,jquery-ui-core,jquery-ui-widget,jquery-ui-mouse,jquery-ui-slider&amp;ver=5.4.2">
+      </script-->
+
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.0/compiled.0.min.js?ver=4.19.0"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/footer-functions.js?ver=4.19.0-update.8"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.9"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.2.0"></script>
+    <!--
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/mdb3/jquery.validate.js?ver=1.0.0"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/ajax-auth-script.js?ver=4.19.0-update.4"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/snippets-behavior.js?ver=4.19.0-update.6"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/edit-pencil-behavior.js?ver=4.8.2"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/pricing-modal.js?ver=4.19.0-update.2"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/client_notification.js?ver=4.7.3-update.4"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/pages-rates.js?ver=4.19.0-update.1"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/dynamic-parts-loader.js?ver=4.19.0-update.10"></script>
+    -->
+    <!-- 
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js?ver=4.2.0"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/js/price-slider_33.js?ver=2.3.1"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/js/jquery.ddslick.min.js?ver=2.3.1"></script>
+    <script type="text/javascript"
+      src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/js/front.js?ver=2.3.1"></script>
+
+ -->
+
+    <script>
+      $(document).ready(function () {
+        $('.button-collapse').sideNav()
+        var el = document.querySelector('.custom-scrollbar')
+        var ps = new PerfectScrollbar(el)
+      })
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var type = window.location.hash.substr(1)
+        if (type === 'docsTabsAPI') {
+          if ($('#docsTabsAPI').length) {
+            $('[href="#docsTabsAPI"]').tab('show')
+          }
+          $('html, body').animate({ scrollTop: 0 }, 'slow')
+        } else if (type === 'docsTabsOverview') {
+          $('html, body').animate({ scrollTop: 0 }, 'slow')
+        }
+
+        var hash = window.location.hash
+        hash && $('ul.nav a[href="' + hash + '"]').tab('show')
+
+        $('.nav-mtd a')
+          .not('#docs-tab-examples')
+          .click(function (e) {
+            var scrollurl = $('body').scrollTop() || $('html').scrollTop()
+
+            window.location.hash = this.hash
+            $('html, body').scrollTop(scrollurl)
+          })
+      })
+    </script>
+
+    <!-- Structured data: Article -->
+    <script>
+      $(function () {
+        $('.sticky').sticky({
+          topSpacing: 90,
+          zIndex: 2,
+          stopper: '#footer',
+        })
+        $('a[href="#docsTabsAPI"]').on('shown.bs.tab', function (e) {
+          $('.sticky2').sticky({
+            topSpacing: 90,
+            zIndex: 2,
+            stopper: '#footer',
+          })
+        })
+        $('a[href="#docsTabsExamples"]').on('shown.bs.tab', function (e) {
+          $('.sticky3').sticky({
+            topSpacing: 90,
+            zIndex: 2,
+            stopper: '#footer',
+          })
+        })
+      })
+    </script>
+  </div>
 </body>
+
 </html>

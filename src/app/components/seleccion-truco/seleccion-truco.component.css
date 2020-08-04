@@ -1,0 +1,10 @@
+.truco {
+    text-align: Center;
+    background-image: url(src/assets/imagenes/fondos/madera.jpg);
+    border-radius: 20px;
+}
+
+.row {
+    width: 92%;
+    margin: 4%;
+}

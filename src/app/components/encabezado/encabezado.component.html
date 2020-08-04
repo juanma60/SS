@@ -1,0 +1,118 @@
+<header id="menu">
+
+  <!-- Sidebar navigation -->
+  <div id="slide-out" class="side-nav fixed fondoMadera" style="z-index: 998;">
+    <ul class="custom-scrollbar black-text">
+      <li>
+        <div class="logo-wrapper waves-light">
+        </div>
+      </li>
+      <!--Social-->
+      <li style="margin-top: 30px;">
+        <ul class="Xsocial" style="display:inline-flex;">
+          <li><a href="#" xclass="icons-sm fb-ic"><i class="fab fa-facebook fa-2x"> </i></a></li>
+          <li><a href="#" class="icons-sm pin-ic"><i class="fab fa-pinterest fa-2x"> </i></a></li>
+          <li><a href="#" class="icons-sm gplus-ic"><i class="fab fa-google-plus fa-2x"> </i></a></li>
+          <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter fa-2x"> </i></a></li>
+        </ul>
+      </li>
+      <!--/Social-->
+      <!-- Side navigation links -->
+      <li>
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i>
+              T.E.O.R.I.A<i class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a routerLink="/teoria/predominio" class="waves-effect">Predominios</a></li>
+                <li><a routerLink="/teoria/posiciones" class="waves-effect">Posiciones</a></li>
+                <li><a routerLink="/teoria/disciplinas" class="waves-effect">Disciplinas</a></li>
+                <li><a routerLink="/teoria/categorias" class="waves-effect">Categorias</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="far fa-hand-pointer"></i>
+              Juego de Skate<i class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a routerLink="/partida/crearPartida" class="waves-effect">Crear juego de S.K.A.T.E</a></li>
+                <li><a routerLink="/skates" class="waves-effect">Historial</a></li>
+                <li><a routerLink="/habilidades" class="waves-effect">Habilidades</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r active"><i class="far fa-eye"></i> About<i
+                class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#" class="waves-effect">Introduction</a></li>
+                <li><a href="#" class="waves-effect">Monthly meetings</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="collapsible-header waves-effect arrow-r"><i class="far fa-envelope"></i> Contact
+              me<i class="fas fa-angle-down rotate-icon"></i></a>
+            <div class="collapsible-body fondoLija">
+              <ul>
+                <li><a href="#" class="waves-effect">FAQ</a></li>
+                <li><a href="#" class="waves-effect">Write a message</a></li>
+                <li><a href="#" class="waves-effect">FAQ</a></li>
+                <li><a href="#" class="waves-effect">Write a message</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <!--/. Side navigation links -->
+    </ul>
+    <div class="sidenav-bg"></div>
+  </div>
+  <!--/. Sidebar navigation -->
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav fondoLija" style="z-index: 999;">
+    <!-- SideNav slide-out button -->
+    <div class="float-left">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i> </a>
+    </div>
+    <!-- Breadcrumb-->
+    <div class="breadcrumb-dn mr-auto">
+
+      <div class="logo-wrapper waves-light">
+        <a href="#"><img src="assets/imagenes/skaters/timmy.jpg" class="img-fluid flex-center" style="width: 40px;"></a>
+      </div>
+
+    </div>
+
+    <ul class="nav navbar-nav nav-flex-icons ml-auto text-white">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/trucos"><i class="fa fa-magic"></i> <span
+            class="clearfix d-none d-sm-inline-block">
+            Trucos </span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/skater"><i class="fas fa-user"></i> <span
+            class="clearfix d-none d-sm-inline-block">
+            Skater </span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/skates"><i class="fa fa-server"></i><span
+            class="clearfix d-none d-sm-inline-block"> S.K.A.T.E
+          </span></a>
+      </li>
+
+      <li class="nav-item dropdown" style="margin-left: -15px;">
+
+        <div class="dropdown-menu dropdown-menu-right dropdown-warning" aria-labelledby="navMenuUsuario">
+          <a class="dropdown-item nodecoration" href="#"><i class="fa fa-key"></i>&nbsp;Cambiar
+            contraseña</a>
+          <a class="dropdown-item nodecoration" href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;Cerra
+            sesión</a>
+        </div>
+        <a class="nav-link dropdown-toggle nodecoration" href="#" id="navMenuUsuario" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"> <i class="fa fa-door-open"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.Navbar -->
+</header>

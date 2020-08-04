@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+
+.fondoLija {
+    background-image: url(assets/imagenes/fondos/lija.jpg);
+    color: white;
+    background-position: center;
+}
+
+.fondoMadera {
+    background-image: url(assets/imagenes/fondos/madera.jpg);
+    background-size: cover;
+    color: black;
+    border-radius: 20px;
+}
+
+.fondoMaderat {
+    background-image: url(assets/imagenes/fondos/maderat.jpg);
+    background-position: top;
+    color: black;
+}
+
+.col {
+    margin-bottom: 5%;
+}
+
+.w-100 {
+    width: 98%;
+    margin: 1%;
+}
+
+.card {
+    width: 100%;
+    border-radius: 19px;
+}
+
+img {
+    padding: 3%;
+}
+
+.page-footer {
+    margin-bottom: 1%;
+}
+
+.altura {
+    height: 65px;
+    width: 97%;
+    margin: 0 1.5%;
+}
+
+@media screen and (min-width: 640px) {
+}
+
+@media screen and (min-width: 960px) {
+    .espacio {
+        margin-top: 55px;
+    }
+}

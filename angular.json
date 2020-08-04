@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SKATE"
+    }
+  },
+  "defaultProject": "SKATE",
+  "cli": {
+    "analytics": "f95fd5f9-ba62-46aa-88ff-8bca7d0510d3"
+  }
 }

@@ -1,0 +1,20 @@
+img {
+    height: 210px;
+}
+
+span {
+    text-align: center;
+    display: inline-block;
+}
+
+.naturalidad {
+    width: 25%;
+}
+
+.nombre {
+    width: 100%;
+}
+
+.puntuacion {
+    width: 50%;
+}

@@ -1,0 +1,117 @@
+<div class="card" *ngIf="false">
+
+  <!-- Card body -->
+  <div class="card-body">
+
+    <!-- Material form register -->
+    <form>
+      <p class="h4 text-center py-4">Crear S.K.AT.E</p>
+
+      <!-- Material input text -->
+      <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="materialFormCardNameEx" class="form-control">
+        <label for="materialFormCardNameEx" class="font-weight-light"></label>
+      </div>
+
+      <!-- Material input email -->
+      <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="email" id="materialFormCardEmailEx" class="form-control">
+        <label for="materialFormCardEmailEx" class="font-weight-light">Your email</label>
+      </div>
+
+      <!-- Material input email -->
+      <div class="md-form">
+        <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+        <input type="email" id="materialFormCardConfirmEx" class="form-control">
+        <label for="materialFormCardConfirmEx" class="font-weight-light">Confirm your email</label>
+      </div>
+
+      <!-- Material input password -->
+      <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" id="materialFormCardPasswordEx" class="form-control">
+        <label for="materialFormCardPasswordEx" class="font-weight-light">Your password</label>
+      </div>
+
+      <div class="text-center py-4 mt-3">
+        <button class="btn btn-cyan" type="submit">Register</button>
+      </div>
+    </form>
+    <!-- Material form register -->
+
+  </div>
+  <!-- Card body -->
+
+</div>
+
+<!-- Material form contact -->
+<div class="card">
+
+  <h5 class="card-header fondoLija white-text text-center py-4">
+    <strong>Nuevo S.K.A.T.E</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" action="#!">
+
+      <!-- Name -->
+      <div class="md-form mt-3">
+        <input type="text" id="materialContactFormName" class="form-control">
+        <label for="materialContactFormName">Nombre del juego</label>
+      </div>
+
+      <!-- Tipo -->
+      <span>Tipo de Juego</span>
+      <select class="mdb-select">
+        <option value="" disabled>Selecciona un juego</option>
+        <option value="1" selected>Clasico</option>
+        <option value="2">2 de 3</option>
+        <option value="3">Parejas</option>
+        <option value="4">Inverso</option>
+        <option value="5">Puntuacion</option>
+        <option value="4">Calentamiento</option>
+
+      </select>
+
+      <!-- Modo -->
+      <span>Modo de juego</span>
+      <select class="mdb-select">
+        <option value="" disabled>Selecciona un modo</option>
+        <option value="1" selected>Normal</option>
+        <option value="2">Obstaculo</option>
+        <option value="3">Competitivo</option>
+      </select>
+      <!-- Participantes -->
+      <span>Participantes</span>
+      <select class="mdb-select">
+        <option value="" disabled>1 - 4</option>
+        <option value="1" selected>4</option>
+        <option value="2">3</option>
+        <option value="3">2</option>
+      </select>
+      <!-- Apuesta -->
+      <span>Apuesta</span>
+      <select class="mdb-select">
+        <option value="" disabled>1 - 3</option>
+        <option value="1" selected>3</option>
+        <option value="2">2</option>
+        <option value="3">1</option>
+      </select>
+
+      <!-- Send button -->
+      <button routerLink="/partida/salaEspera"
+        class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Crear
+        Partida</button>
+
+    </form>
+    <!-- Form -->
+
+  </div>
+
+</div>
+<!-- Material form contact -->

@@ -1,0 +1,189 @@
+<!-- Categorias -->
+<div class="container my-2 py-2 z-depth-1 fondoMadera">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text text-center">
+
+        <h3 class="font-weight-bold pt-4 mb-4">{{tema['tema']}}</h3>
+
+        <h5 class="font-weight-bold font-italic mb-5">{{tema['descripcion']}}</h5>
+
+        <div class="row mx-lg-5 mx-md-3">
+            <div class="col-md-6 mb-4">
+
+                <div class="view mb-5">
+                    <img src="https://mdbootstrap.com/img/illustrations/undraw_grand_slam_0q5r.svg" class="img-fluid"
+                        alt="smaple image">
+                </div>
+                <h4 class="font-weight-bold">{{tema['titulo1']}}</h4>
+                <h5 class="font-weight-normal text-muted">{{tema['nota1']}}</h5>
+
+            </div>
+            <div class="col-md-6 mb-4">
+
+                <div class="view mb-5">
+                    <img src="https://mdbootstrap.com/img/illustrations/undraw_basketball_agx4.png" class="img-fluid"
+                        alt="smaple image">
+                </div>
+
+                <h4 class="font-weight-bold">{{tema['titulo2']}}</h4>
+                <h5 class="font-weight-normal text-muted">{{tema['nota2']}}</h5>
+
+            </div>
+        </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+</div>
+<!-- Tabs -->
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="piso-tab" data-toggle="tab" href="#piso" role="piso" aria-controls="piso"
+            aria-selected="true">Piso</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="riel-tab" data-toggle="tab" href="#riel" role="tab" aria-controls="riel"
+            aria-selected="false">Riel</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="cajon-tab" data-toggle="tab" href="#cajon" role="tab" aria-controls="cajon"
+            aria-selected="false">Cajon</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="copping-tab" data-toggle="tab" href="#copping" role="tab" aria-controls="copping"
+            aria-selected="false">Copping</a>
+    </li>
+</ul>
+
+<!-- Contenido -->
+<div class="tab-content" id="myTabContent">
+    <!-- categorias de piso -->
+    <div class="tab-pane fade show active" id="piso" role="tabpanel" aria-labelledby="piso-tab">
+        <h2>Categorias de la disciplina Piso</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 animated fadeIn">
+            <!-- Card Dark -->
+            <div class="col" *ngFor="let categoria of categorias">
+                <div class="card" *ngIf="categoria['disciplina'] == 'Piso'">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="{{ categoria['foto'] }}" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body fondoMadera black-text rounded-bottom">
+
+                        <!-- Social shares button -->
+                        <a class="activator waves-effect mr-4"></a>
+                        <!-- Title -->
+                        <h4 class="card-title">{{ categoria['categoria'] }} / {{ categoria['disciplina'] }}</h4>
+                        <hr class="hr-light">
+                        <!-- Text -->
+                        <p class="card-text black-text mb-4">{{ categoria['descripcion'] }}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade show active" id="riel" role="tabpanel" aria-labelledby="riel-tab">
+        <h2>Categorias de la disciplina Riel</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 animated fadeIn">
+            <!-- Card Dark -->
+            <div class="col" *ngFor="let categoria of categorias">
+                <div class="card" *ngIf="categoria['disciplina'] == 'Riel'">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="{{ categoria['foto'] }}" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body fondoMadera black-text rounded-bottom">
+
+                        <!-- Social shares button -->
+                        <a class="activator waves-effect mr-4"></a>
+                        <!-- Title -->
+                        <h4 class="card-title">{{ categoria['categoria'] }} / {{ categoria['disciplina'] }}</h4>
+                        <hr class="hr-light">
+                        <!-- Text -->
+                        <p class="card-text black-text mb-4">{{ categoria['descripcion'] }}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade show active" id="cajon" role="tabpanel" aria-labelledby="cajon-tab">
+        <h2>Categorias de la disciplina Cajon</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 animated fadeIn">
+            <div class="col" *ngFor="let categoria of categorias">
+                <div class="card" *ngIf="categoria['disciplina'] == 'Cajon'">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="{{ categoria['foto'] }}" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body fondoMadera black-text rounded-bottom">
+
+                        <!-- Social shares button -->
+                        <a class="activator waves-effect mr-4"></a>
+                        <!-- Title -->
+                        <h4 class="card-title">{{ categoria['categoria'] }} / {{ categoria['disciplina'] }}</h4>
+                        <hr class="hr-light">
+                        <!-- Text -->
+                        <p class="card-text black-text mb-4">{{ categoria['descripcion'] }}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade show active" id="copping" role="tabpanel" aria-labelledby="copping-tab">
+        <h2>Categorias de la disciplina Copping</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 animated fadeIn">
+            <div class="col" *ngFor="let categoria of categorias">
+                <div class="card" *ngIf="categoria['disciplina'] == 'Copping'">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="{{ categoria['foto'] }}" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body fondoMadera black-text rounded-bottom">
+
+                        <!-- Social shares button -->
+                        <a class="activator waves-effect mr-4"></a>
+                        <!-- Title -->
+                        <h4 class="card-title">{{ categoria['categoria'] }} / {{ categoria['disciplina'] }}</h4>
+                        <hr class="hr-light">
+                        <!-- Text -->
+                        <p class="card-text black-text mb-4">{{ categoria['descripcion'] }}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
